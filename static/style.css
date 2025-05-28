@@ -1,0 +1,306 @@
+@font-face {
+	font-family: MuseoDisBlack;
+	font-style: normal;
+	src: url("/static/fonts/MuseoSansDisplay-Black.woff") format("woff"), url("/static/fonts/MuseoSansDisplay-Black.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: MuseoSans300;
+	font-style: normal;
+	src: url("/static/fonts/museosans-300-webfont.woff") format("woff"), url("/static/fonts/museosans-300-webfont.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: MuseoSans900;
+	font-style: normal;
+	src: url("/static/fonts/museosans-900-webfont.woff") format("woff"), url("/static/fonts/museosans-900-webfont.woff2") format("woff2");
+}
+
+* {
+	padding: 0;
+	box-sizing: border-box;
+	font-family: MuseoSans300;
+}
+
+h3 {
+	font-family: MuseoDisBlack;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+h2 {
+	font-family: MuseoDisBlack;
+	font-size: 2rem;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+h1 {
+	font-family: MuseoDisBlack;
+	font-size: 3.5rem;
+	text-transform: uppercase;
+	line-height: 3rem;
+	overflow-wrap: break-word;
+	word-wrap: break-word; 
+	word-break: break-word;
+	margin: 0;
+}
+
+button.fltrbtn {
+	all: unset;
+	display: inline-block;
+	cursor: pointer;
+	font-family: inherit;
+	line-height: 1rem;
+	font-size: .8rem;
+	margin-bottom: 0.3rem;
+	padding: .5rem;
+	border-radius: 1rem;
+	border-style: solid;
+	border-width: 0.15rem;
+	background: white;
+	transition: background 0.1s ease;
+	order: 999;
+}
+
+#clearbtn{
+	border-color: lightgray;
+}
+
+#clearbtn:hover{
+	background: lightgray;
+}
+
+body {
+	max-width: 1024px;
+	margin: auto;
+	padding: .5rem;
+}
+
+a {
+	color: black;
+	display: block;
+	text-decoration: none;
+	font-family: inherit;
+}
+
+a:hover {
+	color: grey;
+}
+
+header {
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
+	border-bottom-style: solid;
+	border-bottom-width: .3rem;
+}
+
+.logo {
+	margin-top: 0.3rem;
+	margin-bottom: 0.3rem;
+	width: 12rem;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-top: 0.3rem;
+}
+
+nav * {
+	display: flex;
+	margin: 0;
+	margin-left: .3rem;
+}
+
+nav a {
+	display: block;
+	text-decoration: none;
+	font-family: MuseoDisBlack;
+}
+
+nav i{
+	font-size: 1.35rem;
+}
+
+footer {
+	display: flex;
+	align-items: start;
+	justify-content: space-between;
+	flex-direction: column;
+	border-top-style: solid;
+	border-top-width: .3rem;
+	padding-top: .3rem;
+}
+
+footer div{
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.filtersection{
+	margin-top: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: .2rem;
+}
+
+.galerie {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	gap: .9rem;
+}
+
+.galerieobj > h3, span {
+	margin-top: 0;
+}
+
+.galerieobj {
+	flex: 0 0 calc(33.333% - .6rem);
+	border-style: solid;
+	border-width: 0.3rem;
+	padding: 0.4rem;
+	display: block;
+}
+
+.galerieobj.hidden{
+	display: none;
+}
+
+.galerieobj img {
+	margin-bottom: 0.3rem;
+	width: 100%;
+	aspect-ratio: 1; 
+	object-fit: cover; 
+}
+
+.cat-tags {
+	margin-top: 1rem;
+}
+
+button.tag {
+	border-color: #6699ff;
+}
+
+button.tag:hover, button.tag.active{
+	background: #6699ff;
+}
+
+button.category {
+	border-color: #ffcc00;
+}
+
+button.category:hover, button.category.active{
+	background: #ffcc00;
+}
+
+button.category-publikation, button.category-projekt, button.category-termin, button.category-news {
+	border-color: #ff66cc;
+	order: 1 !important;
+}
+
+button.category-publikation:hover, button.category-publikation.active,
+button.category-projekt:hover, button.category-projekt.active,
+button.category-termin:hover, button.category-termin.active,
+button.category-news:hover, button.category-news.active {
+	background: #ff66cc;
+}
+
+input {
+	border: .15rem solid;
+	font-size: 1rem;
+	padding-left: .2rem;
+	padding-right: .2rem;
+}
+
+.newsletterinput {
+	height: 2rem;
+	width: 30vw;
+	box-sizing: border-box;
+	margin-bottom: 0.2rem
+}
+
+.newsletter {
+	align-items: center;
+	margin-top: .5rem;
+}
+
+button {
+	all: unset;
+	display: inline-block;
+	cursor: pointer;
+	line-height: 1rem;
+	margin-bottom: 0.3rem;
+	padding: .5rem;
+	border-style: solid;
+	border-width: 0.15rem;
+	border-color: black;
+	background: black;
+	color: white;
+	transition: background 0.1s ease;
+}
+
+button:hover {
+	background: white;
+	color: black;
+}
+
+.postcontainer {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 1rem;
+}
+
+.postcontainer img {
+	width: 50%;
+	object-fit: cover;
+	aspect-ratio: 1;
+}
+
+.post-info {
+	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-left: 1rem;
+	gap: 1rem;
+}
+
+.relatedgalerie {
+	margin-top: .5rem;
+}
+
+@media (max-width: 850px) { /* Tablet */
+	.galerieobj {
+		flex: 0 0 calc(50% - .6rem);
+	}
+}
+
+@media (max-width: 450px) { /* Phone */
+	.galerieobj {
+		flex: 0 0 calc(100% - .6rem);
+	}
+	.galerieobj img {
+		aspect-ratio: 1; 
+	}
+	.logo {
+		margin-top: 0.3rem;
+		margin-bottom: 0.3rem;
+		width: 30%;
+	}
+	.postcontainer img, .post-info {
+		width: 100%;
+		padding-left: 0;
+	}
+	.aboutimg {
+		
+	}
+}
