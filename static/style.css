@@ -1,19 +1,19 @@
 @font-face {
 	font-family: MuseoDisBlack;
 	font-style: normal;
-	src: url("./static/fonts/MuseoSansDisplay-Black.woff") format("woff"), url("/static/fonts/MuseoSansDisplay-Black.woff2") format("woff2");
+	src: url("./fonts/MuseoSansDisplay-Black.woff") format("woff"), url("/static/fonts/MuseoSansDisplay-Black.woff2") format("woff2");
 }
 
 @font-face {
 	font-family: MuseoSans300;
 	font-style: normal;
-	src: url("./static/fonts/museosans-300-webfont.woff") format("woff"), url("/static/fonts/museosans-300-webfont.woff2") format("woff2");
+	src: url("./fonts/museosans-300-webfont.woff") format("woff"), url("/static/fonts/museosans-300-webfont.woff2") format("woff2");
 }
 
 @font-face {
 	font-family: MuseoSans900;
 	font-style: normal;
-	src: url("./static/fonts/museosans-900-webfont.woff") format("woff"), url("/static/fonts/museosans-900-webfont.woff2") format("woff2");
+	src: url("./fonts/museosans-900-webfont.woff") format("woff"), url("/static/fonts/museosans-900-webfont.woff2") format("woff2");
 }
 
 * {
